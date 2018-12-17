@@ -1,0 +1,349 @@
+ul.top {
+    list-style-type: none;
+    margin: 20px;
+    padding: 0;
+    overflow: hidden;
+    background-color: none;
+    border-bottom-style: solid;
+    border-width: thin;
+    border-left-style: hidden;
+    border-right-style: hidden;
+    border-top-style: hidden;
+    border-bottom-color: white;
+}
+
+li.right {
+    float: right;
+    margin-right: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 200;
+
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: none;
+    color: rgb(119, 119, 119);
+    border-bottom: thin solid white;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+li.left{
+  float: left;
+  margin: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 200;
+  color: white;
+}
+
+.dropdown-content a:hover {background-color: none}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.background{
+  position: fixed;
+  z-index: -1000;
+  width: 1550px;
+  height: 1250px;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  max-height: 755px;
+  margin-bottom: auto;
+}
+#myVideo{
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Nunito);
+
+html {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  margin:0;
+  padding:0;
+	perspective: 1px;
+	transform-style: preserve-3d;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  font-family: Nunito;
+}
+
+h1 {
+   font-size: 250%
+}
+
+p {
+  font-size: 140%;
+  line-height: 150%;
+  color: #333;
+}
+
+.slide {
+  position: relative;
+  padding: 25vh 10%;
+  min-height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+  box-shadow: 0 -1px 10px rgba(0, 0, 0, .7);
+	transform-style: inherit;
+}
+
+.sl{
+  position: relative;
+  padding: 25vh 10%;
+  min-height: 85vh;
+  width: 100vw;
+  box-sizing: border-box;
+  box-shadow: none;
+}
+
+.img {
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  width: 320px;
+  height: 240px;
+  transform: translateZ(.25px) scale(.75) translateX(-94%) translateY(-100%) rotate(2deg);
+  padding: 10px;
+  border-radius: 5px;
+  background: rgba(240,230,220, .7);
+  box-shadow: 0 0 8px rgba(0, 0, 0, .7);
+
+}
+
+.img:last-of-type {
+  transform: translateZ(.4px) scale(.6) translateX(-104%) translateY(-40%) rotate(-5deg);
+}
+
+
+.slide:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0 0 8px 1px rgba(0, 0, 0, .7);
+}
+
+.title {
+  width: 50%;
+  padding: 5%;
+  border-radius: 5px;
+  background: rgba(240,230,220, .7);
+  box-shadow: 0 0 8px rgba(0, 0, 0, .7);
+
+}
+
+
+.slide:nth-child(2n) .title {
+  margin-left: auto;
+  margin-right: 0;
+  float: right;
+}
+
+.slide:nth-child(2n+1) .title {
+  margin-left: 0;
+  margin-right: auto;
+  float: right;
+}
+
+.slide, .slide:before {
+  background: 50% 50% / cover;
+}
+
+.header {
+  text-align: center;
+  font-size: 175%;
+  color: #fff;
+  text-shadow: 0 2px 2px #000;
+}
+
+#title {
+  background-image: url("cover2.jpg");
+  color: black;
+}
+
+#title h1 {
+ transform: translateZ(.25px) scale(.75);
+ transform-origin: 50% 100%;
+
+}
+#slide2 {
+  background-image: url("pexel.jpeg");
+  z-index: 2;
+}
+
+#slide5 {
+  background-image: url("veg.jpeg");
+  z-index: 2;
+}
+
+#slideA{
+  background-image: url("pexel.jpeg");
+}
+#slideB{
+  background-image: url("badjanani.jpg");
+transform: translateZ(-1px) scale(2);
+}
+
+.content{
+  width: 100%;
+
+  box-sizing: border-box;
+  min-height: 100vh; /* will cover the 100% of viewport */
+  overflow: hidden;
+  display: block;
+  position: relative;
+  padding-bottom: 200px; /* height of your footer */
+}
+/* STYLES SPECIFIC TO FOOTER  */
+.footer {
+  height: 200px;
+  background-color: rgb(76,73,73);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+
+}
+.footer .col {
+  width: 190px;
+  height: auto;
+  float: right;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+
+  padding-right: 40px;
+  margin-bottom: 20px;
+}
+.footer .col h1 {
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+  font-size: 15px;
+  line-height: 17px;
+  padding: 20px 0px 5px 0px;
+  color: rgb(217,217,217);
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.250em;
+}
+.footer .col ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.footer .col ul li {
+  color: #999999;
+  font-size: 18px;
+  font-family: inherit;
+  font-weight: bold;
+  padding: 5px 0px 5px 0px;
+  cursor: pointer;
+  transition: .2s;
+  -webkit-transition: .2s;
+  -moz-transition: .2s;
+  border-bottom-style: none;
+}
+.social ul li {
+  display: inline-block;
+  padding-right: 5px !important;
+}
+
+
+.footer .col ul li:hover {
+  color: #ffffff;
+  transition: .1s;
+  -webkit-transition: .1s;
+  -moz-transition: .1s;
+}
+.clearfix {
+  clear: both;
+}
+
+
+@media only screen and (min-width: 1280px) {
+  .contain {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 1139px) {
+  .contain .social {
+    width: 1000px;
+    display: block;
+  }
+  .social h1 {
+    margin: 0px;
+  }
+}
+@media only screen and (max-width: 950px) {
+  .footer .col {
+    width: 33%;
+  }
+  .footer .col h1 {
+    font-size: 14px;
+  }
+  .footer .col ul li {
+    font-size: 13px;
+  }
+}
+@media only screen and (max-width: 500px) {
+    .footer .col {
+      width: 50%;
+    }
+    .footer .col h1 {
+      font-size: 14px;
+    }
+    .footer .col ul li {
+      font-size: 13px;
+    }
+}
+@media only screen and (max-width: 340px) {
+  .footer .col {
+    width: 100%;
+  }
+}
